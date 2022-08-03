@@ -4,38 +4,70 @@
     background-color: $solidWhite;
     border-bottom: 2px solid rgba($color: $primary, $alpha: 0.1);
     z-index: 10;
-}
+    padding: 15px 0;
 
-.wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.searchCart {
-    display: flex; //puts elements in a rox
-    align-items: center; // centers the elements veritically
-}
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.bag,
-.menuIcon {
-    padding: 10px 5px;
-}
+    .searchCart {
+        display: flex; //puts elements in a rox
+        align-items: center; // centers the elements veritically
+    }
 
-.counter {
+    .bag,
+    .menuIcon {
+        padding: 10px 5px;
+    }
+
+    .counter {
+        background-color: $primary;
+        color: $solidWhite;
+        // to create circle has to have same width and radius, then border radius
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        // text-align: center; //tac is quick hand for this
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 5px;
+    }
+
+    .logo {
+        margin-left: 50px;
+    }
+}
+//TODO: implement slide out functionality in JS
+.slideOutNav {
     background-color: $primary;
     color: $solidWhite;
-    // to create circle has to have same width and radius, then border radius
-    width: 25px;
-    height: 25px;
-    border-radius: 50%;
-    // text-align: center; //tac is quick hand for this
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    padding: 30px 50px;
+    width: 100%;
+    max-width: 450px;
+    font-weight: bold;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 5px;
+    flex-direction: column;
+    z-index: 20;
+    left: -450px; //max-width is the same to slide it off the screen
+
+    button {
+        align-self: flex-end;
+    }
+
+    a {
+        line-height: 2.2rem;
+
+        &:hover,
+        &:focus {
+            color: rgb($color: $solidWhite, $alpha: 0.6);
+        }
+    }
 }
 
-.logo {
-    margin-left: 50px;
-}
