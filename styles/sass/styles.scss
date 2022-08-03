@@ -1,8 +1,12 @@
+//base
 @import "./partials/setup";
 @import "./partials/variables";
 @import "./partials/mixins";
 @import "./partials/typography";
-@import "./partials/baseStyles"
+@import "./partials/baseStyles";
+
+//sections
+@import "./partials/nav";
 
 
 // HEADINGS:

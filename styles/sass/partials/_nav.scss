@@ -1,0 +1,41 @@
+.navBar {
+    position: sticky;
+    top: 0; //where we want the position to stick
+    background-color: $solidWhite;
+    border-bottom: 2px solid rgba($color: $primary, $alpha: 0.1);
+    z-index: 10;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchCart {
+    display: flex; //puts elements in a rox
+    align-items: center; // centers the elements veritically
+}
+
+.bag,
+.menuIcon {
+    padding: 10px 5px;
+}
+
+.counter {
+    background-color: $primary;
+    color: $solidWhite;
+    // to create circle has to have same width and radius, then border radius
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    // text-align: center; //tac is quick hand for this
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+
+.logo {
+    margin-left: 50px;
+}
