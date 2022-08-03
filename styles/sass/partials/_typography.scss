@@ -15,3 +15,75 @@
     font-family: "Young Serif";
     src: url(../fonts/youngserif/YoungSerif-Regular.otf);
 }
+
+
+// HEADINGS they reccommended
+// h1: 28px;
+// h2: 40px;
+// h3: 54px;
+// h4: 34px;
+// h5: 14px;
+
+//most browsers default size is 16px, this will bring it up to 20px
+html {
+    font-size: 125%;
+}
+
+//base body default font styling
+body{
+    font-family: $secondaryFont;
+    font-size: $baseFontSize;
+    color: $primary;
+}
+
+//heading styles
+
+h1, h2, h3, h4{
+    font-family: $primaryFont;
+    color: $primary;
+    margin: 0;
+}
+
+h1{
+    // font-size: 1.4rem; // 1.4 x 20px =28px; <-- one way to do it
+    @include fontSize(28); // <-- second way to do it
+}
+
+h2 {
+    // font-size: 2rem; // 2 x 20px = 40px <-- one way to do it
+    @include fontSize(40); // <-- second way to do it
+    margin-bottom: 18px;
+}
+
+h3 {
+    @include fontSize(54);
+}
+
+h4 {
+    @include fontSize(34);
+}
+
+h5{
+    @include fontSize(16);
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+p{
+    line-height: 1.4; //1.4 x the default font size
+    
+    // selects the paragraph in small copy class
+    // this is the zero on the top of the search cart
+    &.smallCopy {
+        @include fontSize(14);
+        font-weight: bold;
+        margin: 0;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
