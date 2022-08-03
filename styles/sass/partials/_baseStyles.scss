@@ -32,9 +32,20 @@ a {
         padding: 15px 32px;
     }
 
-    &:hover,
-    &:focus {
+        &:hover,
+        &:focus {
+            background-color: $primary;
+            color: $solidWhite;
+    }
+
+    &.secondaryButton {
         background-color: $primary;
         color: $solidWhite;
+
+        &:hover,
+        &:focus {
+            background-color: $solidWhite;
+            color: $primary;
+        }
     }
 }
