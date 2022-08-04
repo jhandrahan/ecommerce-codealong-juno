@@ -1,0 +1,14 @@
+header {
+    display: flex;
+    align-items: center;
+    background-color: $tertiary;
+
+    .headerImgContainer{
+        width: 45%;//shit is growing and shrinking
+    }
+
+    .headerContentContainer{
+        width: 55%;
+        padding: 0 90px;
+    }
+}
