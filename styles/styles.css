@@ -455,3 +455,41 @@ a.secondaryButton:hover, a.secondaryButton:focus {
 .slideOutNav a:hover, .slideOutNav a:focus {
   color: rgba(255, 255, 255, 0.6);
 }
+
+footer {
+  background-color: #084b6d;
+  color: #fff;
+  padding: 70px 0;
+}
+footer h4 {
+  color: #fff;
+}
+footer h5 {
+  margin-top: 0;
+}
+footer .footerFlexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footerNav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+footer a:hover, footer a:focus {
+  color: #fff;
+}
