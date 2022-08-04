@@ -1,0 +1,19 @@
+.play {
+    background-image: url(../assets/background-image.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 40px 0;
+
+    .playContainer {
+        background-color: $solidWhite;
+        border: 20px solid $secondary;
+        max-width: 650px;
+        padding: 70px 40px;
+        text-align: center;
+
+        p{
+            text-align: left;
+        }
+    }
+    
+}

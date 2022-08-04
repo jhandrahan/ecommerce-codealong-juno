@@ -25,7 +25,8 @@ button {
 a {
     display: inline-block; //anchors are applying top and bottom properties with inline-block. prevents overlap with other elements.
 
-    &.button{
+    &.button,
+    &.secondaryButton{
         border: 2px solid $primary;
         @include fontSize(14);
         font-weight: bold;
