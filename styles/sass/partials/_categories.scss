@@ -1,0 +1,35 @@
+.categories {
+    padding: 90px 0;
+}
+
+.categoryGallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+
+    .item1 {background-color: $quinary;}
+    .item2 { background-color: $secondary;}
+    .item3 {background-color: $tertiary;}
+    .item4 {background-color: $quaternary;}
+
+    .item {
+        width: 40%;
+        padding: 40px;
+        border-radius: 10%;
+        margin: 25px 0;
+
+        & a:hover,
+        & a:focus {
+            transform: scale(0.9);
+        }
+    }
+
+    img {
+        border-radius: 10%;
+        margin-bottom: 20px;
+    }
+
+
+
+}
