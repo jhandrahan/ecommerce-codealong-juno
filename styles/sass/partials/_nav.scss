@@ -56,6 +56,11 @@
     flex-direction: column;
     z-index: 20;
     left: -450px; //max-width is the same to slide it off the screen
+    transition: 0.3s;
+    
+    &.open{
+        left: 0;
+    }
 
     button {
         align-self: flex-end;

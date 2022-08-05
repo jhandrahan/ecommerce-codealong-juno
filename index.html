@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>STARTER - Toybox Homepage</title>
 	<link rel="stylesheet" href="./styles/styles.css">
+	<script src="./script.js"></script>
 </head>
 <body>
     <a href="#mainContent" class="skipLink">Skip to the main content.</a>
@@ -13,7 +14,7 @@
 	<nav class="navBar">
 		<div class="wrapper">
 			
-			<button class="menuIcon">
+			<button class="menuIcon" id="hamburger">
 				<img src="./assets/menu-button.svg" alt="open slide-out menu">
 			</button>
 
@@ -22,7 +23,7 @@
 			</a>
 
 			<div class="searchCart">
-				<button class="menuIcon">
+				<button class="menuIcon" >
 					<img src="./assets/search.svg" alt="search icon" class="searchIcon">
 				</button>
 
@@ -38,7 +39,7 @@
 		</div>  <!-- END .wrapper  -->
 
 		<div class="slideOutNav">
-			<button>
+			<button id="menuClose">
 				<img src="./assets/menu-close.svg" alt="close slide-out navigation">
 			</button>
 			<nav>

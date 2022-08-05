@@ -40,6 +40,11 @@
         }
     }
 
+    .slideOutNav{
+        font-family: $primaryFont;
+        @include fontSize(36);
+    }
+
     .categories {
         .categoryGallery {
             margin-top: 50px;
