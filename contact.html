@@ -64,6 +64,44 @@
         </div><!-- END .wrapper-->
     </header>
 
+    <main id="mainContent">
+        <div class="wrapper">
+            <form action="" method="" class="contactForm" name="contactForm">
+                <label for="name" class="sr-only">Name</label>
+                <input type="text" id="name" placeholder="Name">
+
+                <label for="surname" class="sr-only">Surname</label>
+                <input type="text" id="surname" placeholder="Surname">
+
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Email">
+
+                <label for="phone" class="sr-only">Phone</label>
+                <input type="tel" id="phone" placeholder="Phone">
+
+              <select name="reason" id="reason">
+                <option value="initial" disabled selected>Reason for contacting</option>
+                <option value="questions">Questions</option>
+                <option value="complaints">Complaints</option>
+                <option value="refunds">Refunds</option>
+                <option value="shipping">Shipping</option>
+                <option value="other">Other</option>
+              </select>
+
+              <label for="message" class="sr-only">Message for me</label>
+              <textarea name="message" id="message" cols="30" rows="10" placeholder="Message for me"></textarea>
+
+              <fieldset>
+                <input type="checkbox" id="terms">
+                <label for="terms">I agree to the <a href="#" class="terms">Terms & Conditions.</a> </label>
+              </fieldset>
+
+              <button>Send Message</button>
+
+            </form>
+        </div>
+    </main>
+
     <footer>
         <div class="wrapper">
             <div class="footerFlexContainer">
