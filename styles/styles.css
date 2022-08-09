@@ -478,6 +478,22 @@ header .headerContentContainer {
   padding: 0 90px;
 }
 
+.contactHeader {
+  background-color: #fff5f5;
+  padding-top: 100px;
+  text-align: center;
+}
+.contactHeader .contactContent {
+  padding-bottom: 50px;
+}
+.contactHeader::after {
+  content: "";
+  background-image: url(../assets/wave.svg);
+  width: 100%;
+  height: 150px;
+  background-size: 100% 150px;
+}
+
 .categories {
   padding: 90px 0;
 }
