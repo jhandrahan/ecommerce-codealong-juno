@@ -24,21 +24,6 @@ button {
 
 a {
     display: inline-block; //anchors are applying top and bottom properties with inline-block. prevents overlap with other elements.
-
-    &.button,
-    &.secondaryButton{
-        border: 2px solid $primary;
-        @include fontSize(14);
-        font-weight: bold;
-        padding: 15px 32px;
-    
-
-        &:hover,
-        &:focus {
-            background-color: $primary;
-            color: $solidWhite;
-        }
-    }
     
     &.secondaryButton {
         background-color: $primary;
@@ -49,5 +34,21 @@ a {
             background-color: $solidWhite;
             color: $primary;
         }
+    }
+}
+
+.button,
+.secondaryButton {
+    border: 2px solid $primary;
+    @include fontSize(14);
+    font-weight: bold;
+    padding: 15px 32px;
+    color: $primary;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus {
+        background-color: $primary;
+        color: $solidWhite;
     }
 }
